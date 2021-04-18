@@ -9,7 +9,7 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
-    res.send([{ firstName: "Pini", lastName: "Hodadad" }, { firstName: "Avi", lastName: "Cohen" }]);
+    res.send([{ firstName: "cusromer one", lastName: "customer two" }, { firstName: "customer three", lastName: "customer four" }]);
 });
 
 app.listen(PORT, () => {
