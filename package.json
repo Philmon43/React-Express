@@ -4,7 +4,9 @@
   "description": "react-express project",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "build": "cd client && npm run build",
+    "instal-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server/app.js"
   },
   "engines": {
