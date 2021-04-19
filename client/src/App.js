@@ -6,7 +6,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data } = await axios.get("http://localhost:5000");
+      const { data } = await axios.get("/");
       setData(data)
     }
 
