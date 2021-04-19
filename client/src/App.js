@@ -6,7 +6,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data } = await axios.get("/");
+      const { data } = await axios.get("/api");
       setData(data)
     }
 

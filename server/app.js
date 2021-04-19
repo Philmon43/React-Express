@@ -11,7 +11,7 @@ app.use(express.json());
 const publicDirectory = path.hion(__dirname, "client/build");
 app.use(express.static(publicDirectory));
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
     res.send([{ firstName: "cusromer one", lastName: "customer two" }, { firstName: "customer three", lastName: "customer four" }]);
 });
 
