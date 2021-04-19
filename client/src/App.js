@@ -6,7 +6,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { data } = await axios.get("https://lit-scrubland-66466.herokuapp.com");
+      const { data } = await axios.get("/api");
       setData(data)
     }
 

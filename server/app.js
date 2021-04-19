@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 
-const publicDirectory = path.hion(__dirname, "client/build");
+const publicDirectory = path.join(__dirname, "client/build");
 app.use(express.static(publicDirectory));
 
 app.get("/api", (req, res) => {
